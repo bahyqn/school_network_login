@@ -6,6 +6,14 @@
 </head>
 <body>
 
+<form>
+    your password:
+    <input type="text" id="password">
+    <input type="button" onclick="ee()" value="apply"><br>
+    password after encrypt:
+    <div id="pwd"></div>
+</form>
+
 <script>
     function xproc1(str) {
         var EChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
@@ -40,11 +48,10 @@
     }
 
     function ee() {
-        var password = '';
-        console.log(xproc1(password));
+        let pwd = document.getElementById("pwd");
+        pwd.innerHTML = xproc1(document.getElementById("password").value);
     }
 
-    ee();
 </script>
 </body>
 </html>
