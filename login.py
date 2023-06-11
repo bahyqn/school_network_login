@@ -1,7 +1,7 @@
 import requests
 
 # DDDDD: 学号
-#upass：加密后的密码
+# upass：加密后的密码
 
 url = 'http://192.168.1.252/'
 data = {
