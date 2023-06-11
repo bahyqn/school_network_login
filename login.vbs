@@ -21,7 +21,7 @@ objHTTP.send strData
 If objHTTP.status = 200 Then
 
     'The request was successful
-    Wscript.Echo "Request successful"
+    'Wscript.Echo "Request successful"
 
 Else
 
